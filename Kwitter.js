@@ -1,7 +1,7 @@
-var name1 = "";
+
 function login()
 {
-    name1 = document.getElementById("input_log").value;
-     localStorage.setItem("user_name" , name1);
+    user_name = document.getElementById("user_name").value;
+     localStorage.setItem("user_name", user_name );
      window.location=("Kwitter_room.html");
 }

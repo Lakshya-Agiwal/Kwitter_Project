@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Kwitter Room</title>
-	<script src="Kwitter_room.js"></script>
+	<title>Kwitter Message page</title>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -15,38 +13,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-
-
-
-
 <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
-	
+
 <div class="container">
-<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
 	<center>
 		<h1 class="header">	
-			Events Section	
+			Kwitter	
 			<sup>
 				<img src="m2.png">
 			</sup>
 		</h1>
-		<h3 class="color_white" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Welcome <span id="show_user" ></span></h3>
-		<div class="form-group input_div_room_page">
-			<button function="create()">#Create_Room:</button>
-			<br>
-			<br>
-       <input id="New_room" placeholder="Enter your Room Name">
-		</div>
-		<button class="btn btn-success" onclick="room_adder()">Start</button>
-		
-		<h3 class="color_white">#sHaRe_YoUr_ViEwS</h3>
-        <h3 class="color_white">#Participate_in_EVENTS</h3>
-		<div id="output"></div>
+		<div id="output" style="text-align: left;margin-bottom: 70px ;"  >  </div>
 	</center>
 </div>
-<script src="kwitter_room.js"></script>
+
+<center>
+	<div class="input_div_message_page" >
+		<input id="input_msg" placeholder="Enter your Message!" class="form-control" style="text-align: center;">
+		<br>
+		<label>Send:</label>
+		<button class="btn btn-success" onclick="Send_msg()">Send</button>
+	</div>
+</center>
+
+<script src="kwitter_page.js"></script>
 </body>
 </html>
